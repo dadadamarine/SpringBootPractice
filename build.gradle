@@ -19,9 +19,6 @@ group = 'com.dadadamarine'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
-//Spring Boot Overriding
-ext['hibernate.version'] = '5.2.11.Final'
-
 repositories {
     mavenCentral()
 }
