@@ -1,4 +1,4 @@
-package com.dadadamarine.springwebservice;
+package com.dadadamarine.webservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
