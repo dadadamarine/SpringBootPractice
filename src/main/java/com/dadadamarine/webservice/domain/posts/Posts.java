@@ -1,14 +1,14 @@
-package com.dadadamarine.webservice.domain;
+package com.dadadamarine.webservice.domain.posts;
 
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
