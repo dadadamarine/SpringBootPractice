@@ -1,4 +1,4 @@
-package com.dadadamarine.webservice.domain;
+package com.dadadamarine.webservice.domain.posts;
 
 import org.junit.After;
 import org.junit.Test;
@@ -16,7 +16,6 @@ import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@ContextConfiguration(classes = PostsRepositoryTest.class, loader = AnnotationConfigContextLoader.class)
 public class PostsRepositoryTest {
 
     @Autowired

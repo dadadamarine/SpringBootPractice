@@ -1,4 +1,4 @@
-package com.dadadamarine.webservice.domain;
+package com.dadadamarine.webservice.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
