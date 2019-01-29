@@ -22,6 +22,8 @@ public class WebRestController {
 
     @PostMapping("/posts")
     public void savePosts(@RequestBody PostsSaveRequestDto dto){
+        System.out.println("posts 실행");
+        System.out.println(dto);
         postsService.save(dto);
     }
 }
