@@ -4,8 +4,9 @@ import com.dadadamarine.webservice.domain.posts.PostsRepository;
 import com.dadadamarine.webservice.dto.posts.PostsSaveRequestDto;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
+import java.util.stream.Collectors;
 
 @AllArgsConstructor
 @Service
@@ -17,4 +18,10 @@ public class PostsService {
         return postsRepository.save(dto.toEntity()).getId();
     }
 
+//    @Transactional
+//    public List<PostsMainResponseDto> findAllDesc() {
+//        return postsRepository.findAllDesc()
+//                .map(PostsMainResponseDto::new)
+//                .collect(Collectors.toList());
+//    }
 }
