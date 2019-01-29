@@ -16,7 +16,7 @@ public class PostsService {
     private PostsRepository postsRepository;
 
     @Transactional
-    public long save(PostsSaveRequestDto dto){
+    public long save(PostsSaveRequestDto dto) {
         return postsRepository.save(dto.toEntity()).getId();
     }
 

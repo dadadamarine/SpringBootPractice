@@ -16,14 +16,13 @@ public class WebRestController {
     private PostsService postsService;
 
     @GetMapping("/hello")
-    public String hello(){
+    public String hello() {
         return "HelloWorld";
     }
 
     @PostMapping("/posts")
-    public void savePosts(@RequestBody PostsSaveRequestDto dto){
-        System.out.println("posts 실행");
-        System.out.println(dto);
+    public String savePosts(@RequestBody PostsSaveRequestDto dto) {
         postsService.save(dto);
+        return "{\"msg\":\"success\"}";
     }
 }
